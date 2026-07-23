@@ -1,3 +1,5 @@
+import java.util.*;
+
 public class BinaryTreeRightSideView {
 
     public static List<Integer> rightSideView(TreeNode root) {
@@ -34,13 +36,13 @@ public class BinaryTreeRightSideView {
 
     public static void main(String[] args) {
 
-        TreeNode root = new TreeNode(1);
+        TreeNode2 root = new TreeNode2(1);
 
-        root.left = new TreeNode(2);
-        root.right = new TreeNode(3);
+        root.left = new TreeNode2(2);
+        root.right = new TreeNode2(3);
 
-        root.left.right = new TreeNode(5);
-        root.right.right = new TreeNode(4);
+        root.left.right = new TreeNode2(5);
+        root.right.right = new TreeNode2(4);
 
         System.out.println(rightSideView(root));
     }
